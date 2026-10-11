@@ -15,7 +15,7 @@
 ---
 
 ## 📁 Структура репозиторію
-```text
+
 .
 ├── .github/workflows/
 │   └── deploy.yml          # GitHub Actions CI/CD пайплайн
@@ -26,3 +26,11 @@
 ├── deploy.sh               # Скрипт автоматичної збірки, пушу та деплою
 ├── index.html              # Статична веб-сторінка
 └── README.md               # Документація проєкт
+
+Варіанти запуску
+1. Швидкий запуск веб-додатка з Docker Hub (Рекомендовано для швидкої перевірки)
+Для перевірки роботи самого контейнера без необхідності клонувати репозиторій або щось збирати локально:
+docker run -d -p 8080:8080 --name test-app squezeeek/hello-panda:latest
+```bash
+$ docker run -d -p 8080:8080 --name test-app squezeeek/hello-panda:latest
+```
